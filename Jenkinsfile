@@ -1,4 +1,38 @@
-pipeline {
+pipeline {// The first line in this file indicates
+// the Android plugin is applied for Gradle to
+// this build
+
+apply plugin : 'com.android.application'
+
+android
+{
+	compileSdkVersion 30
+	buildToolsVersion "30.0.3"
+	{
+		applicationId "example.mehakmeet.geeksforgeeks"
+		minSdkVersion 19
+		targetSdkVersion 30
+		versionCode 1
+		versionName "1.0"
+	}
+	buildTypes
+	{
+		release
+		{
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+}
+
+dependencies
+{
+	implementation fileTree(include
+							: [ '*.jar' ], dir
+							: 'libs')
+		implementation 'com.android.support:appcompat-v7:26.1.0'
+}
+
 	agent none
 
 	triggers {
