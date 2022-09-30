@@ -26,6 +26,15 @@ rm -rf./gradlew build
 ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
+
+
+
+public class Main {
+  public static void main(String[] args) {
+    double myNum = 19.99d;
+    System.out.println(myNum);  
+  }
+}
 fi
 rm -rf build
 cd ../initial
