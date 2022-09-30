@@ -13,7 +13,27 @@ repositories {
 	pojoCentral()
 	angularCentral()
 }
-
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+ 
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.3'
+    }
+}
+ 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+ 
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
