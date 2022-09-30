@@ -7,7 +7,11 @@ plugins {
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
-
+div {
+  background-repeat: no-repeat, repeat;
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-blend-mode: lighten;
+}
 repositories {
 	mavenCentral()
 }
@@ -22,6 +26,26 @@ dependencies {
 	// end::tests[]
 }
 
-test {
+test {buildscript {
+    repositories {
+        google()
+        mavenCentral()
+ 
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.3'
+    }
+}
+ 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+ 
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
 	useJUnitPlatform()
 }
