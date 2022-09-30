@@ -46,7 +46,12 @@ exit $retcd ../initial
 ./mvnw clean compile
 ret=$?
 if [ $ret -ne 0 ]; then
-exit $retcd ../initial
+exit $retcd ../initialpublic class Main {
+  public static void main(String[] args) {
+    int myNum = 100000;
+    System.out.println(myNum);  
+  }
+}
 
 
 ret=$?
