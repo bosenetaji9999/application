@@ -26,7 +26,20 @@ while (num > 0)
 if (num % 10 != square % 10)   
 //returns false if digits are not equal  
 return false;   
-//reduce num and square by dividing them by 10  
+//reduce num and squtring index() {
+		return "Greetings from Spring Boot!";
+	}
+
+}
+public class AutomorphicNumberExample1  
+{   
+//user-defined static method that checks whether the number is automorphic or not   
+static boolean isAutomorphic(int num)   
+{   
+//determines the square of the specified number  
+int square = num * num;   
+//comparing the digits until the number becomes 0  
+while (num > 0)   are by dividing them by 10  
 num = num/10;   
 square = square/10;   
 }   
