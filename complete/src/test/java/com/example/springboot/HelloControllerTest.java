@@ -80,4 +80,12 @@ Output 1:
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo("Greetings from Spring Boot!")));
 	}
+	
+	int square = num * num;   
+//comparing the digits until the number becomes 0  
+while (num > 0)   
+{   
+//find the remainder (last digit) of the variable num and square and comparing them  
+if (num % 10 != square % 10)   
+//returns false if digits are not equal  
 }
