@@ -13,6 +13,14 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+//comparing the digits until the number becomes 0  
+while (num > 0)   are by dividing them by 10  
+num = num/10;   
+square = square/10;   
+}   
+return true;   
+}   
+//Driver code  
 @SpringBootTest
 @AutoConfigureMockMvc
 public class HelloControllerTest {
