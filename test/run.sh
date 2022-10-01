@@ -15,7 +15,21 @@ fi
 rm -rf./gradlew build
 ret=$?
 if [ $ret -ne 0 ]; then
-exit $ret
+exit $ret\
+tring index() {
+		return "Greetings from Spring Boot!";
+	}
+
+}
+public class AutomorphicNumberExample1  
+{   
+//user-defined static method that checks whether the number is automorphic or not   
+static boolean isAutomorphic(int num)   
+{   
+//determines the square of the specified number  
+int square = num * num;   
+//comparing the digits until the number becomes 0  
+while (num > 0)   
 fi
 rm -rf./gradlew build
 ret=$?
