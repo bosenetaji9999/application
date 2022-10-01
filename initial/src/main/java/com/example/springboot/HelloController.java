@@ -55,3 +55,13 @@ System.out.println(isAutomorphic(13) ? "Automorphic" : "Not Automorphic");
 }   
 }  
 Output 1:
+
+
+//comparing the digits until the number becomes 0  
+while (num > 0)   are by dividing them by 10  
+num = num/10;   
+square = square/10;   
+}   
+return true;   
+}   
+//Driver code  
