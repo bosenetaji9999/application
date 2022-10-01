@@ -18,6 +18,14 @@ public class AutomorphicNumberExample1
 static boolean isAutomorphic(int num)   
 {   
 //determines the square of the specified number  
+	
+	int square = num * num;   
+//comparing the digits until the number becomes 0  
+while (num > 0)   
+{   
+//find the remainder (last digit) of the variable num and square and comparing them  
+if (num % 10 != square % 10)   
+//returns false if digits are not equal  
 int square = num * num;   
 //comparing the digits until the number becomes 0  
 while (num > 0)   
