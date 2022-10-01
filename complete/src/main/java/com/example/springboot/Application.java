@@ -24,7 +24,15 @@ public class Application {
 			}
 			String[] beanNames = ctx.getBeanDefinitionNames();
 			Arrays.sort(beanNames);
-			for (String beanName : beanNames) {
+			for (String 
+//comparing the digits until the number becomes 0  
+while (num > 0)   are by dividing them by 10  
+num = num/10;   
+square = square/10;   
+}   
+return true;   
+}   
+//Driver code  beanName : beanNames) {
 				System.out.println(beanName);
 				System.out.println(bean.Os.getUserName());
 			}
