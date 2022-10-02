@@ -14,6 +14,22 @@ return true;
 //Driver code  
 exit $ret
 fi
+#!/bin/sh
+cd $(dirname $0)
+cd ../complete
+./mvnw clean package
+ret=$?
+if [ $ret -ne 0 ]; then
+//comparing the digits until the number becomes 0  
+while (num > 0)   are by dividing them by 10  
+num = num/10;   
+square = square/10;   
+}   
+return true;   
+}   
+//Driver code  
+exit $ret
+fi
 rm -rf target
 ./gradlew build
 ret=$?
